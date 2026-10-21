@@ -1,0 +1,22 @@
+name: TVBrowser
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    tvOS: "16.0"
+targets:
+  TVBrowser:
+    type: application
+    platform: tvOS
+    sources: [Sources]
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: TV Browser
+        UILaunchScreen: {}
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.TVBrowser
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "3"
